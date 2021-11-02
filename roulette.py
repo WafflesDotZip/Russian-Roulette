@@ -8,6 +8,9 @@ import sys
 
 
 
+#print(bcolors.HEADER + "This is the color format" + bcolors.ENDC)
+
+
 
 print("""\n ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄   ▄▀▀▄ ▄▀▀▄  ▄▀▀▀▀▄     ▄▀▀█▄▄▄▄  ▄▀▀▀█▀▀▄  ▄▀▀▀█▀▀▄  ▄▀▀█▄▄▄▄ 
 █   █   █ █      █ █   █    █ █    █     ▐  ▄▀   ▐ █    █  ▐ █    █  ▐ ▐  ▄▀   ▐ 
@@ -18,7 +21,7 @@ print("""\n ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄   ▄▀▀▄ ▄▀�
                                 ▐         ▐        ▐         ▐          ▐        """)
 
 
-print("\nRussian Roulette game • ═════════════════════ • Developed by AFK-Waffles\n")
+print("\nRussian Roulette game • ═════════════════════ • Developed by AFK-Waffles / Waffles#6893\n")
 
 
 
@@ -59,19 +62,19 @@ elif rounds != 1 or rounds != 2 or rounds != 3 or rounds != 4 or rounds != 5 or 
     exit()
     
 time.sleep(1)
-for x in range(1000): #not the best way to make a loop, but it works
+for x in range(10000): #not the best way to make a loop, but it works
     input("\n════════════════════════\n\n>>> Press [ ENTER ] to spin and pull the trigger...\n")
     
     time.sleep(0.2)
     
-    print("•", end = '')
+    print("•", end = ' ')
     
     time.sleep(0.2)
     
-    print("•", end = '')
+    print("•", end = ' ')
     time.sleep(0.2)
     
-    print("•", end = '')
+    print("•", end = ' ')
     time.sleep(0.3)
     
 
@@ -116,6 +119,3 @@ for x in range(1000): #not the best way to make a loop, but it works
             
             input("\n>>> Press [ ENTER ] to end the program.")
             exit()
-    
-
-
