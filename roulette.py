@@ -45,8 +45,7 @@ rounds = int(input(">>> ")) #takes input of rounds
 survival = 6 - rounds #calculates survival rate
 int(rounds) #converts rounds to an integer
 
-if rounds == 1 or rounds == 2 or rounds == 3 or rounds == 4 or rounds == 5 or rounds == 6: #not optimized but it works
-    int(rounds)
+if int(rounds) in [1, 2, 3, 4, 5, 6]: # In
     if players > 1:
         print("\n• {} rounds are placed into the cylinder.\n• There is a {} in 6 chance of survival right now.\n• {} people are playing.".format(rounds,survival,players))
     elif players == 1:
@@ -55,26 +54,21 @@ if rounds == 1 or rounds == 2 or rounds == 3 or rounds == 4 or rounds == 5 or ro
 
 
    
-elif rounds != 1 or rounds != 2 or rounds != 3 or rounds != 4 or rounds != 5 or rounds != 6: #it works
+elif rounds not in [1, 2, 3, 4, 5, 6]: # Not in 
     print("Value must be between 1 - 6. Please restart the program.")
     time.sleep(2)
     input("[ ENTER ] to end program.")
     exit()
     
 time.sleep(1)
-for x in range(10000): #not the best way to make a loop, but it works
+while True: # Since you're using exit(), while True shouldn't be a problem.
     input("\n════════════════════════\n\n>>> Press [ ENTER ] to spin and pull the trigger...\n")
     
-    time.sleep(0.2)
+    # For loops used correctly to repeat a action:
+    for x in range(3):
+        time.sleep(0.2) 
+        print("•", end = ' ')
     
-    print("•", end = ' ')
-    
-    time.sleep(0.2)
-    
-    print("•", end = ' ')
-    time.sleep(0.2)
-    
-    print("•", end = ' ')
     time.sleep(0.3)
     
 
